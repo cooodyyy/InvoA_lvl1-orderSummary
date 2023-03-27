@@ -1,2 +1,56 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
+
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.card {
+  max-width: 460px;
+  border-radius: var(--rounding);
+  background-color: var(--color-white);
+  overflow: hidden;
+
+  & &__title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 2rem 0 17px;
+  }
+
+  & &__description {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 25.6px;
+    letter-spacing: -0.15px;
+    text-align: center;
+    margin: 0 3.5rem 0;
+    color: var(--color-body);
+  }
+}
+
+.plan {
+  background-color: var(--color-background);
+  border-radius: var(--rounding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+}
+
+.stroke {
+  width: var(--stroke);
+  height: 50px;
+  background-color: var(--color-stroke);
+}
