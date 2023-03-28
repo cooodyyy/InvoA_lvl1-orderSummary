@@ -17,10 +17,11 @@
   & &__title {
     font-size: 2rem;
     font-weight: 700;
-    line-height: 40px;
+    // line-height: 40px;
+    line-height: 43.71px;
     letter-spacing: 0;
     text-align: center;
-    margin: 2rem 0 17px;
+    margin: 29.6px 0 16.6px;
   }
 
   & &__description {
@@ -40,22 +41,36 @@
   display: flex;
   align-items: center;
   //   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 2rem 17px;
   margin: 40px 1rem 1rem 1rem;
 
   & &__title {
+    // font-size: 18px;
+    // font-weight: 700;
+    // line-height: 24.59px;
+    // color: var(--color-title);
+
     font-size: 18px;
     font-weight: 700;
-    line-height: 24.59px;
+    line-height: 25px;
+    letter-spacing: 0em;
     color: var(--color-title);
+    transform: translateY(-1px);
   }
 
   & &__cost {
+    // font-size: 14px;
+    // font-weight: 500;
+    // line-height: 22.4px;
+    // letter-spacing: -0.3px;
+    // color: var(--color-body);
+
     font-size: 14px;
     font-weight: 500;
-    line-height: 23.4px;
-    letter-spacing: -0.3px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
     color: var(--color-body);
+    transform: translateY(1px);
   }
 
   & &__wrapper {
@@ -75,7 +90,7 @@
   width: var(--stroke);
   height: 50px;
   background-color: var(--color-stroke);
-  margin: 0 2rem;
+  margin: 0 31.8px 0 31.4px;
 }
 
 .link {
@@ -94,6 +109,7 @@
   &--cancel {
     color: var(--color-title);
     margin: 20px auto 2rem;
+    transform: translateY(1px);
   }
 }
 
@@ -104,16 +120,24 @@
   color: var(--color-white);
   border: none;
   width: 93%;
-  margin: 2rem 1rem 1rem;
-  padding: 1rem 0;
+  margin: 31.5px 1rem 1rem;
+  padding: 15px 0 15px;
   border-radius: var(--rounding);
+
+//   font-size: 16px;
+//   font-weight: 700;
+//   line-height: 25.6px;
+//   letter-spacing: -0.01em;
+//   text-align: center;
+//   transition: background-color 0.2s;
 
   font-size: 16px;
   font-weight: 700;
-  line-height: 25.6px;
+  line-height: 26px;
   letter-spacing: -0.01em;
   text-align: center;
-  transition: background-color .2s;
+  transition: background-color 0.2s;
+
 
   &:hover {
     background-color: var(--color-primary-hover);
