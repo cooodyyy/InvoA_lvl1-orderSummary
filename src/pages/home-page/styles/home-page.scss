@@ -39,9 +39,31 @@
   border-radius: var(--rounding);
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  margin: 1rem;
+  //   justify-content: space-between;
+  padding: 1rem 2rem;
+  margin: 40px 1rem 1rem 1rem;
+
+  & &__title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.59px;
+    color: var(--color-title);
+  }
+
+  & &__cost {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23.4px;
+    letter-spacing: -0.3px;
+    color: var(--color-body);
+  }
+
+  & &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .button {
@@ -53,4 +75,47 @@
   width: var(--stroke);
   height: 50px;
   background-color: var(--color-stroke);
+  margin: 0 2rem;
+}
+
+.link {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  text-align: center;
+  letter-spacing: -0.17px;
+
+  &--plan {
+    transform: translateY(2px);
+    color: var(--color-primary);
+  }
+
+  &--cancel {
+    color: var(--color-title);
+    margin: 20px auto 2rem;
+  }
+}
+
+.button {
+  // box-sizing: border-box;
+  display: block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  width: 93%;
+  margin: 2rem 1rem 1rem;
+  padding: 1rem 0;
+  border-radius: var(--rounding);
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  letter-spacing: -0.01em;
+  text-align: center;
+  transition: background-color .2s;
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
 }
