@@ -1,0 +1,56 @@
+@import "_typography.scss";
+
+.button {
+  @include fontset-button;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  width: 93%;
+  margin: 31.5px 1rem 1rem;
+  padding: 15px 0 15px;
+  border-radius: var(--rounding);
+
+  transition: background-color 0.2s, color 0.2s;
+
+  &:hover {
+    background-color: var(--color-primary-hover);
+  }
+
+  &--loading {
+    cursor: default;
+    background-color: var(--color-primary-disabled);
+    color: var(--color-white-disabled);
+
+    &:hover {
+      background-color: var(--color-primary-disabled);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border: 4px solid transparent;
+      border-top-color: #ffffff;
+      border-radius: 50%;
+      animation: button-loading-spinner 1s ease infinite;
+    }
+  }
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}

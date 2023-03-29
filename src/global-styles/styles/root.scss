@@ -3,19 +3,18 @@
 /// For examples see Material Design color system: https://m2.material.io/design/color/the-color-system.html
 
 :root {
-  // 1. colors
+  // Colors
   --color-background: #f8f9fe;
   --color-title: #151827;
   --color-primary: #680262;
   --color-primary-hover: #490245;
-  --color-primary-disabled: rgba(104, 2, 98, .7);
+  --color-primary-disabled: rgba(104, 2, 98, 0.3);
   --color-body: #85859b;
   --color-stroke: #cfd1dd;
   --color-white: #fff;
+  --color-white-disabled: rgba(255, 255, 255, 0.3);
 
-  // 2.1. Fonts / Desktop
-     
-  // 3. Styles
+  // Styles
   --rounding: 16px;
   --stroke: 1px;
 }

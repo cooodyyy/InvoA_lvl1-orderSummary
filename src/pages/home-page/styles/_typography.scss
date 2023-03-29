@@ -1,0 +1,45 @@
+@mixin fontset-card__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 43.71px;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+@mixin fontset-card__description {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 25.6px;
+  letter-spacing: -0.15px;
+  text-align: center;
+}
+
+@mixin fontset-plan__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+}
+
+@mixin fontset-plan__cost {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+}
+
+@mixin fontset-link {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 25.6px;
+  text-align: center;
+  letter-spacing: -0.17px;
+}
+
+@mixin fontset-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
