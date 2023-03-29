@@ -17,7 +17,6 @@
   & &__title {
     font-size: 2rem;
     font-weight: 700;
-    // line-height: 40px;
     line-height: 43.71px;
     letter-spacing: 0;
     text-align: center;
@@ -40,16 +39,10 @@
   border-radius: var(--rounding);
   display: flex;
   align-items: center;
-  //   justify-content: space-between;
   padding: 1rem 2rem 17px;
   margin: 40px 1rem 1rem 1rem;
 
   & &__title {
-    // font-size: 18px;
-    // font-weight: 700;
-    // line-height: 24.59px;
-    // color: var(--color-title);
-
     font-size: 18px;
     font-weight: 700;
     line-height: 25px;
@@ -59,12 +52,6 @@
   }
 
   & &__cost {
-    // font-size: 14px;
-    // font-weight: 500;
-    // line-height: 22.4px;
-    // letter-spacing: -0.3px;
-    // color: var(--color-body);
-
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
@@ -100,6 +87,11 @@
   line-height: 25.6px;
   text-align: center;
   letter-spacing: -0.17px;
+  transition: transform .2s;
+
+  &:hover{
+    transform: translateY(-1px);
+  }
 
   &--plan {
     transform: translateY(2px);
@@ -114,7 +106,8 @@
 }
 
 .button {
-  // box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
   display: block;
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -123,23 +116,53 @@
   margin: 31.5px 1rem 1rem;
   padding: 15px 0 15px;
   border-radius: var(--rounding);
-
-//   font-size: 16px;
-//   font-weight: 700;
-//   line-height: 25.6px;
-//   letter-spacing: -0.01em;
-//   text-align: center;
-//   transition: background-color 0.2s;
-
   font-size: 16px;
   font-weight: 700;
   line-height: 26px;
   letter-spacing: -0.01em;
   text-align: center;
-  transition: background-color 0.2s;
-
+  transition: background-color 0.2s, color 0.2s;
 
   &:hover {
     background-color: var(--color-primary-hover);
+  }
+
+  &:active {
+    background-color: var(--color-primary-disabled);
+  }
+
+  &--loading {
+    cursor:default;
+    background-color: var(--color-primary-disabled);
+    color: rgba($color: #fff, $alpha: .3);
+
+    &:hover {
+        background-color: var(--color-primary-disabled);
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 16px;
+      height: 16px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      border: 4px solid transparent;
+      border-top-color: #ffffff;
+      border-radius: 50%;
+      animation: button-loading-spinner 1s ease infinite;
+    }
+  }
+}
+
+@keyframes button-loading-spinner {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
   }
 }
