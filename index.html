@@ -14,7 +14,8 @@
   <div id="home-page" class="home-page">
     <div class="card">
 
-      <img class="card__img" src="images/AdobeStock_331830515 1.png" alt="girl with headphones">
+      <div class="card__img"></div>
+      <!-- <img class="card__img" src="images/AdobeStock_331830515 1.png" alt="girl with headphones"> -->
       <h1 class="card__title">Order Summary</h1>
       <p class="card__description">You're close! Confirm your purchase and complete your order in the next step</p>
 
@@ -46,7 +47,7 @@
     buttonProceed.addEventListener("click", () => {
       buttonProceed.classList.add("button--loading");
     });
-    
+
     buttonCancel.addEventListener('click', () => {
       buttonProceed.classList.remove("button--loading");
     })

@@ -17,6 +17,20 @@
   background-color: var(--color-white);
   overflow: hidden;
 
+  @media screen and (max-width: 835px) {
+    max-width: 343px;
+  }
+
+  & &__img {
+    height: 232px;
+    background-image: url("../../../../public/images/AdobeStock_331830515\ 1.png");
+
+    @media screen and (max-width: 835px) {
+      height: 188px;
+      background-position: center;
+    }
+  }
+
   & &__title {
     @include fontset-card__title;
     margin: 29.6px 0 16.6px;
