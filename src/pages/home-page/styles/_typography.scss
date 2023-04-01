@@ -5,7 +5,7 @@
   letter-spacing: 0;
   text-align: center;
 
-  @media screen and (max-width: 835px) {
+  @media screen and (max-width: $tablet-breakpoint) {
     font-size: 1.5rem;
     line-height: 32.78px;
   }
@@ -18,7 +18,7 @@
   letter-spacing: -0.15px;
   text-align: center;
 
-  @media screen and (max-width: 835px) {
+  @media screen and (max-width: $tablet-breakpoint) {
     font-size: 14px;
     line-height: 22.4px;
   }
@@ -30,7 +30,7 @@
   line-height: 25px;
   letter-spacing: 0em;
 
-  @media screen and (max-width: 835px) {
+  @media screen and (max-width: $tablet-breakpoint) {
     font-size: 1rem;
     line-height: 21.86px;
   }
@@ -42,7 +42,7 @@
   line-height: 22px;
   letter-spacing: -0.01em;
 
-  @media screen and (max-width: 835px) {
+  @media screen and (max-width: $tablet-breakpoint) {
     font-size: 12px;
     line-height: 19.2px;
   }
@@ -55,7 +55,7 @@
   text-align: center;
   letter-spacing: -0.17px;
 
-  @media screen and (max-width: 835px) {
+  @media screen and (max-width: $tablet-breakpoint) {
     font-size: 14px;
     line-height: 22.4px;
   }
@@ -68,30 +68,3 @@
   letter-spacing: -0.01em;
   text-align: center;
 }
-
-// @media screen and (max-width: 835px) {
-//   @mixin fontset-card__title {
-//     font-size: 1.5rem;
-//     line-height: 32.78px;
-//   }
-
-//   @mixin fontset-card__description {
-//     font-size: 14px;
-//     line-height: 22.4px;
-//   }
-
-//   @mixin fontset-plan__title {
-//     font-size: 1rem;
-//     line-height: 21.86px;
-//   }
-
-//   @mixin fontset-plan__cost {
-//     font-size: 12px;
-//     line-height: 19.2px;
-//   }
-
-//   @mixin fontset-link {
-//     font-size: 14px;
-//     line-height: 22.4px;
-//   }
-// }

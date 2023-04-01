@@ -1,6 +1,6 @@
 /// Homepage Styles File
 /// Here we import all the Styles files we need for our Homepage.
-
+@import "_breakpoints.scss";
 @import "_typography.scss";
 @import "_button.scss";
 
@@ -12,20 +12,21 @@
 }
 
 .card {
+  margin: 1rem;
   max-width: 460px;
   border-radius: var(--rounding);
   background-color: var(--color-white);
   overflow: hidden;
 
-  @media screen and (max-width: 835px) {
-    max-width: 343px;
+  @media screen and (max-width: $tablet-breakpoint) {
+    max-width: 342px;
   }
 
   & &__img {
     height: 232px;
     background-image: url("../../../../public/images/AdobeStock_331830515\ 1.png");
 
-    @media screen and (max-width: 835px) {
+    @media screen and (max-width: $tablet-breakpoint) {
       height: 188px;
       background-position: center;
     }
@@ -34,12 +35,20 @@
   & &__title {
     @include fontset-card__title;
     margin: 29.6px 0 16.6px;
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      margin: 41px 0 15px;
+    }
   }
 
   & &__description {
     @include fontset-card__description;
     margin: 0 3.5rem 0;
     color: var(--color-body);
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      margin: 0 1rem 0;
+    }
   }
 }
 
@@ -51,16 +60,29 @@
   padding: 1rem 2rem 17px;
   margin: 40px 1rem 1rem 1rem;
 
+  @media screen and (max-width: $tablet-breakpoint) {
+    padding: 15px 24px 17px 20px;
+    margin: 2rem 1rem 1rem 1rem;
+  }
+
   & &__title {
     @include fontset-plan__title;
     color: var(--color-title);
     transform: translateY(-1px);
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      transform: translateY(1px);
+    }
   }
 
   & &__cost {
     @include fontset-plan__cost;
     color: var(--color-body);
     transform: translateY(1px);
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      transform: translateY(2px);
+    }
   }
 
   & &__wrapper {
@@ -76,6 +98,11 @@
   height: 50px;
   background-color: var(--color-stroke);
   margin: 0 31.8px 0 31.4px;
+
+  @media screen and (max-width: $tablet-breakpoint) {
+    height: 43px;
+    margin: 0 23px 0 20px;
+  }
 }
 
 .link {
@@ -96,5 +123,9 @@
     color: var(--color-title);
     margin: 20px auto 2rem;
     transform: translateY(1px);
+
+    @media screen and (max-width: $tablet-breakpoint) {
+      margin: 20px auto 1.5rem;
+    }
   }
 }
