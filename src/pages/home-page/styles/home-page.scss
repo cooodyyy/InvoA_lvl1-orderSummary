@@ -43,7 +43,7 @@
 
   & &__description {
     @include fontset-card__description;
-    margin: 0 3.5rem 0;
+    margin: 0 56px 0;
     color: var(--color-body);
 
     @media screen and (max-width: $tablet-breakpoint) {
@@ -57,8 +57,8 @@
   border-radius: var(--rounding);
   display: flex;
   align-items: center;
-  padding: 1rem 2rem 17px;
-  margin: 40px 1rem 1rem 1rem;
+  padding: 16px 32px 17px;
+  margin: 2.5rem 1rem 1rem 1rem;
 
   @media screen and (max-width: $tablet-breakpoint) {
     padding: 15px 24px 17px 20px;
@@ -121,11 +121,11 @@
 
   &--cancel {
     color: var(--color-title);
-    margin: 20px auto 2rem;
+    margin: 1.25rem auto 2rem;
     transform: translateY(1px);
 
     @media screen and (max-width: $tablet-breakpoint) {
-      margin: 20px auto 1.5rem;
+      margin: 1.25rem auto 1.5rem;
     }
   }
 }
