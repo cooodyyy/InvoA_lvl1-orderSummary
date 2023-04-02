@@ -34,7 +34,7 @@
 
   & &__title {
     @include fontset-card__title;
-    margin: 29.6px 0 16.6px;
+    margin: 32px 0 16.6px;
 
     @media screen and (max-width: $tablet-breakpoint) {
       margin: 41px 0 15px;
