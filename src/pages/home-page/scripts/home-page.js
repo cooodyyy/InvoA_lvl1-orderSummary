@@ -1,8 +1,15 @@
 /// Homepage JavaScript File
 /// Here we import all the JavaScript files we need for our homepage.
 
-import '../styles/home-page.scss'
+import "../styles/home-page.scss";
 
-import { setupCounter } from '../../../global-scripts/scripts/counter/counter.js'
+const buttonProceed = document.querySelector(".button");
+const buttonCancel = document.querySelector(".link--cancel");
 
-setupCounter(document.querySelector('#counter'))
+buttonProceed.addEventListener("click", () => {
+  buttonProceed.classList.add("button--loading");
+});
+
+buttonCancel.addEventListener("click", () => {
+  buttonProceed.classList.remove("button--loading");
+});
