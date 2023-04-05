@@ -13,8 +13,7 @@
   margin: 32.5px 16px 16px;
   padding: 15px 0 15px;
   border-radius: var(--rounding);
-
-  transition: background-color 0.2s, color 0.2s;
+  transition: background-color var(--transision-time), color var(--transision-time);
 
   @media screen and (max-width: $tablet-breakpoint) {
     width: 91%;
@@ -43,9 +42,9 @@
       bottom: 0;
       margin: auto;
       border: 4px solid transparent;
-      border-top-color: #ffffff;
-      border-radius: 50%;
-      animation: button-loading-spinner 1s ease infinite;
+      border-top-color: var(--color-white);
+      border-radius: var(--rounding-loader);
+      animation: button-loading-spinner var(--transision-time-loader) ease infinite;
     }
   }
 }
